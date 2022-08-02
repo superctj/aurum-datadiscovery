@@ -87,3 +87,7 @@ data/*
 # Store for models and glove
 models/
 ontomatch/glove/
+
+# Elasticsearch
+elasticsearch-6.0.0.zip
+elasticsearch-6.0.0/

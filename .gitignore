@@ -91,3 +91,5 @@ ontomatch/glove/
 # Elasticsearch
 elasticsearch-6.0.0.zip
 elasticsearch-6.0.0/
+
+outputs/

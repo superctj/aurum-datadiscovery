@@ -23,11 +23,11 @@ sources:
 # Include a source for each data source to configure
 
   # name to identify each source, e.g., migration_database, production, lake, etc.
-- name: "nextiaJD-xs_csv_repository"
+- name: "nextiaJD_testbedS_csv_repository"
   # indicate the type of source, one of [csv, postgres, mysql, oracle10g, oracle11g]  
   type: csv
   config:
     # path indicates where the CSV files live
-    path: "/data/nextiaJD_datasets/testbedXS/datasets/"
+    path: "/data/nextiaJD_datasets/aurum_only/testbedS/tab/"
     # separator used in the CSV files
-    separator: ','
+    separator: "\t"

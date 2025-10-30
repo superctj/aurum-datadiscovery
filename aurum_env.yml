@@ -1,23 +1,26 @@
 name: aurum
 channels:
-  - conda-forge
   - anaconda
+  - conda-forge
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
   - blas=1.0=mkl
-  - ca-certificates=2022.4.26=h06a4308_0
-  - certifi=2021.5.30=py36h06a4308_0
+  - ca-certificates=2025.10.5=hbd8a1cb_0
+  - certifi=2021.5.30=py36h5fab9bb_0
   - icu=58.2=he6710b0_3
   - intel-openmp=2022.0.1=h06a4308_3633
   - jansson=2.14=h7f98852_0
+  - libblas=3.9.0=1_h6e990d7_netlib
+  - libcblas=3.9.0=3_h893e4fe_netlib
   - libedit=3.1.20210910=h7f8727e_0
   - libffi=3.2.1=hf484d3e_1007
   - libgcc-ng=11.2.0=h1234567_1
   - libgfortran-ng=7.5.0=ha8ba4b0_17
   - libgfortran4=7.5.0=ha8ba4b0_17
   - libgomp=11.2.0=h1234567_1
+  - liblapack=3.9.0=3_h893e4fe_netlib
   - libstdcxx-ng=11.2.0=h1234567_1
   - libxml2=2.9.12=h03d6c58_0
   - mkl=2019.4=243
@@ -25,10 +28,11 @@ dependencies:
   - mkl_fft=1.3.0=py36h54f3939_0
   - mkl_random=1.1.0=py36hd6b4f25_0
   - ncurses=6.3=h5eee18b_3
-  - openssl=1.0.2u=h7b6447c_0
+  - openssl=1.0.2u=h516909a_0
   - pcre=8.45=h295c915_0
   - pip=21.2.2=py36h06a4308_0
   - python=3.6.7=hd21baee_1002
+  - python_abi=3.6=2_cp36m
   - scipy=1.1.0=py36h7c811a0_2
   - setuptools=52.0.0=py36h06a4308_0
   - sqlite=3.33.0=h62c20be_0
@@ -39,104 +43,104 @@ dependencies:
   - yaml=0.2.5=h7b6447c_0
   - zlib=1.2.11=h7f8727e_4
   - pip:
-    - alembic==0.8.5
-    - amqp==1.4.9
-    - anyjson==0.3.3
-    - appdirs==1.4.0
-    - appnope==0.1.0
-    - billiard==3.3.0.22
-    - bitarray==0.8.1
-    - bleach==2.1.4
-    - celery==3.1.20
-    - click==6.6
-    - colorama==0.3.7
-    - cycler==0.9.0
-    - dataclasses==0.6
-    - dataset==0.6.2
-    - datasketch==0.2.4
-    - decorator==4.0.11
-    - defusedxml==0.5.0
-    - django==1.10.5
-    - editdistance==0.2
-    - elasticsearch==7.0.0
-    - elasticsearch-dsl==7.2.1
-    - entrypoints==0.2.3
-    - fire==0.1.3
-    - flask==1.0.2
-    - flask-cors==2.1.2
-    - gnureadline==6.3.3
-    - html5lib==0.999999999
-    - ipykernel==4.2.1
-    - ipython==4.0.1
-    - ipython-genutils==0.1.0
-    - ipywidgets==4.1.1
-    - isodate==0.5.4
-    - itsdangerous==0.24
-    - java-random==1.0
-    - jinja2==2.10
-    - jsonschema==2.5.1
-    - jupyter==1.0.0
-    - jupyter-client==5.2.3
-    - jupyter-console==4.0.3
-    - jupyter-core==4.4.0
-    - kombu==3.0.33
-    - line-profiler==1.0
-    - mako==1.0.4
-    - markupsafe==0.23
-    - matplotlib==1.5.1
-    - mistune==0.8.3
-    - mock==2.0.0
-    - nbconvert==5.4.0
-    - nbformat==4.4.0
-    - neo4j==1.7.1
-    - neobolt==1.7.17
-    - neotime==1.7.4
-    - networkx==1.11
-    - nltk==3.1
-    - normality==0.2.4
-    - notebook==5.7.0
-    - numpy==1.17.0
-    - ontospy==1.7.3
-    - packaging==16.8
-    - pandas==0.19.2
-    - pandocfilters==1.4.2
-    - path-py==8.1.2
-    - pbr==1.10.0
-    - pexpect==4.0.1
-    - pickleshare==0.5
-    - prometheus-client==0.3.1
-    - psycopg2==2.7.1
-    - ptyprocess==0.5
-    - pyfiglet==0.7.5
-    - pygments==2.0.2
-    - pymongo==3.2
-    - pyparsing==2.0.6
-    - python-dateutil==2.4.2
-    - python-editor==1.0
-    - python-gnupg==0.3.9
-    - pytz==2015.7
-    - pyyaml==3.11
-    - pyzmq==17.1.2
-    - qtconsole==4.1.1
-    - rdflib==4.2.2
-    - rdflib-jsonld==0.4.0
-    - readline==6.2.4.1
-    - redis==2.10.5
-    - requests==2.13.0
-    - scikit-learn==0.19.1
-    - send2trash==1.5.0
-    - simplegeneric==0.8.1
-    - six==1.10.0
-    - snakeviz==0.4.2
-    - sparqlwrapper==1.8.0
-    - sqlalchemy==1.0.12
-    - terminado==0.8.1
-    - testpath==0.3.1
-    - tornado==4.3
-    - tqdm==4.26.0
-    - traitlets==4.3.2
-    - urllib3==1.21.1
-    - webencodings==0.5
-    - werkzeug==0.14.1
-    - yappi==0.94
-prefix: /home/ubuntu/miniconda3/envs/aurum
+      - alembic==0.8.5
+      - amqp==1.4.9
+      - anyjson==0.3.3
+      - appdirs==1.4.0
+      - appnope==0.1.0
+      - billiard==3.3.0.22
+      - bitarray==0.8.1
+      - bleach==2.1.4
+      - celery==3.1.20
+      - click==6.6
+      - colorama==0.3.7
+      - cycler==0.9.0
+      - dataclasses==0.6
+      - dataset==0.6.2
+      - datasketch==0.2.4
+      - decorator==4.0.11
+      - defusedxml==0.5.0
+      - django==1.10.5
+      - editdistance==0.2
+      - elasticsearch==7.0.0
+      - elasticsearch-dsl==7.2.1
+      - entrypoints==0.2.3
+      - fire==0.1.3
+      - flask==1.0.2
+      - flask-cors==2.1.2
+      - gnureadline==6.3.3
+      - html5lib==0.999999999
+      - ipykernel==4.2.1
+      - ipython==4.0.1
+      - ipython-genutils==0.1.0
+      - ipywidgets==4.1.1
+      - isodate==0.5.4
+      - itsdangerous==0.24
+      - java-random==1.0
+      - jinja2==2.10
+      - jsonschema==2.5.1
+      - jupyter==1.0.0
+      - jupyter-client==5.2.3
+      - jupyter-console==4.0.3
+      - jupyter-core==4.4.0
+      - kombu==3.0.33
+      - line-profiler==1.0
+      - mako==1.0.4
+      - markupsafe==0.23
+      - matplotlib==1.5.3
+      - mistune==0.8.3
+      - mock==2.0.0
+      - nbconvert==5.4.0
+      - nbformat==4.4.0
+      - neo4j==1.7.1
+      - neobolt==1.7.17
+      - neotime==1.7.4
+      - networkx==1.11
+      - nltk==3.1
+      - normality==0.2.4
+      - notebook==5.7.0
+      - numpy==1.17.0
+      - ontospy==1.7.3
+      - packaging==16.8
+      - pandas==0.19.2
+      - pandocfilters==1.4.2
+      - path-py==8.1.2
+      - pbr==1.10.0
+      - pexpect==4.0.1
+      - pickleshare==0.5
+      - prometheus-client==0.3.1
+      - psycopg2==2.7.1
+      - ptyprocess==0.5
+      - pyfiglet==0.7.5
+      - pygments==2.0.2
+      - pymongo==3.2
+      - pyparsing==2.0.6
+      - python-dateutil==2.4.2
+      - python-editor==1.0
+      - python-gnupg==0.3.9
+      - pytz==2015.7
+      - pyyaml==3.11
+      - pyzmq==17.1.2
+      - qtconsole==4.1.1
+      - rdflib==4.2.2
+      - rdflib-jsonld==0.4.0
+      - readline==6.2.4.1
+      - redis==2.10.5
+      - requests==2.13.0
+      - scikit-learn==0.19.1
+      - send2trash==1.5.0
+      - simplegeneric==0.8.1
+      - six==1.10.0
+      - snakeviz==0.4.2
+      - sparqlwrapper==1.8.0
+      - sqlalchemy==1.0.12
+      - terminado==0.8.1
+      - testpath==0.3.1
+      - tornado==4.3
+      - tqdm==4.26.0
+      - traitlets==4.3.2
+      - urllib3==1.21.1
+      - webencodings==0.5
+      - werkzeug==0.14.1
+      - yappi==0.94
+prefix: /home/tianji/miniconda3/envs/aurum
